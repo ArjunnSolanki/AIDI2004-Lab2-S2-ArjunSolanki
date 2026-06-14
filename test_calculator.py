@@ -1,7 +1,9 @@
 # test_calculator.py - Created by Arjun Solanki
 
 import unittest
-from calculator import add, subtract, multiply, divide
+
+from calculator import add, divide, multiply, subtract
+
 
 class TestCalculator(unittest.TestCase):
 
@@ -20,6 +22,7 @@ class TestCalculator(unittest.TestCase):
     def test_divide_by_zero(self):
         with self.assertRaises(ValueError):
             divide(10, 0)
+
 
 if __name__ == "__main__":
     unittest.main()
